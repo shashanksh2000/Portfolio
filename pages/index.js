@@ -5,7 +5,7 @@ import {
   Heading,
   Box,
   Image,
-  SimpleGrid,
+  // SimpleGrid,
   Button,
   List,
   ListItem,
@@ -17,8 +17,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoLinkedin, IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+// import { GridItem } from '../components/grid-item'
+import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 
@@ -92,7 +92,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          CGPA: 9.66. Completing the Bachelor's Program with majors in 
+          CGPA: 9.66. Completing the Bachelor&apos;s Program with majors in 
           Computer Science & Engineering from National 
           Institute of Technology Hamirpur, India.
         </BioSection>

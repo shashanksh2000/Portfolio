@@ -13,7 +13,7 @@ const Work = () => (
       <P>
       PageRank is an algorithm used by Google Search to rank web pages 
       in their search engine results. It is named after both the term 
-      "web page" and co-founder Larry Page. PageRank is a way of 
+      &quot;web page&quot; and co-founder Larry Page. PageRank is a way of 
       measuring the importance of website pages.
       </P>
       <List ml={4} my={4}>
