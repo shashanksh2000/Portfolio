@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbNailPowershell from '../public/images/contents/powershell.png'
+import thumbNailPowershell from '../public/images/contents/Powershell.png'
 
 const Posts = () => (
   <Layout title="Posts">
