@@ -14,7 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { OrgSection, OrgName, WorkDuration, BulletPoint } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
@@ -40,7 +40,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Shashank Sharma
           </Heading>
-          <p>Software Engineer ( Developer / Learner / Gamer )</p>
+          <p>Software Engineer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -63,47 +63,80 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Bio
         </Heading>
         <Paragraph>
-          Shashank is a student at NIT Hamirpur and software developer based in India 
-          with a passion for building digital services and learning new technology. 
-          He has a knack for all things building products, from planning and designing 
-          all the way to solving real-life problems with code. When not online, he 
-          probably be competing in virtual world. Currently, he is building himself 
-          to work as low-latency developer. {' '}
+	        I&apos;m Shashank Sharma, a dedicated low latency engineer at Open Futures 
+	        Group, a prominent High-Frequency Trading (HFT) firm. With a passion for 
+	        learning and implementing new technologies to build sophisticated systems 
+	        that address real-world challenges with precision. 
         </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
-            </Button>
-          </NextLink>
-        </Box>
+	      <Paragraph>
+	        Beyond engineering excellence, my current focus involves the nuances of 
+	        quantitative analysis. I am committed to unraveling the complexities of 
+	        financial markets, leveraging my skills to extract valuable insights for 
+	        strategic decision-making.
+	      </Paragraph>
+        
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Experience
         </Heading>
-        <BioSection>
-          <BioYear>2000</BioYear>
-          Born in Bulandshahr, India.
-        </BioSection>
-        <BioSection>
-          <BioYear>2018</BioYear>
-          CGPA: 9.66. Completing the Bachelor&apos;s Program with majors in 
-          Computer Science & Engineering from National 
-          Institute of Technology Hamirpur, India.
-        </BioSection>
-        <BioSection>
-          <BioYear>2020</BioYear>
-          Worked as ML Intern remotely at Development Tracks, Delhi
-        </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          Worked as SDE Intern remotely at Multigraf AG, Switzerland
-        </BioSection>
+       
+	      <OrgSection>
+	        <OrgName>Open Futures Group</OrgName>
+          <WorkDuration>Jun, 2022 - Present</WorkDuration>
+	      </OrgSection>
+        <BulletPoint>
+            Optimized market data and order execution delivery systems.
+        </BulletPoint>
+        <BulletPoint>
+            Worked with multiple protocols followed by native, non-native and crypto exchanges.
+        </BulletPoint>  
+        <BulletPoint>
+            Developed network based customizable order-matching engine for testing strategies.
+        </BulletPoint>  
+        <BulletPoint>
+            Performed debugging and optimization of critical flow through profiling tools.
+        </BulletPoint>
+
+         <OrgSection>
+	        <OrgName>Acko Pvt Ltd</OrgName>
+          <WorkDuration>Jan, 2022 - May, 2022</WorkDuration>
+	      </OrgSection>
+          <BulletPoint>
+              Implemented multiple frontend interfaces for Acko app.
+          </BulletPoint>  
+          <BulletPoint>
+              Instrumented over 100 events to monitor and analyze user behavior and app performance.
+          </BulletPoint>  
+          <BulletPoint>
+              Created multiple APIs for backend to serve data to the frontend UX/UI.
+          </BulletPoint>  
+              
+        <OrgSection>
+	        <OrgName>Multigraf</OrgName>
+          <WorkDuration>May, 2021 - July, 2021</WorkDuration>
+	      </OrgSection>
+        <BulletPoint>
+            Build full stack web app for remote monitoring and maintenance of printing solution machines.
+        </BulletPoint> 
+        <BulletPoint>
+            Implemented regular fetching of machine jobs and ensuring real-time updates.
+        </BulletPoint>  
+        <BulletPoint>
+            Integrated sys logging and UDP message filtering for machine logs and added triggers based on messages and priority orders.
+        </BulletPoint> 
+        
+	      <Box align="center" my={4}>
+          <Link href="https://drive.google.com/file/d/1Ini6ieU1prz22Qls3Rmac3zOBc6vt0wO/view?usp=sharing" target="_blank">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Resume
+            </Button>
+          </Link>
+        </Box>
       </Section>
 
       <Section delay={0.3}>
@@ -111,7 +144,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          C++, Blockchain, Machine Learning, Music, Anime & Video Games
+          C++, Blockchain, Mathematics, Music, Anime & Video Games
         </Paragraph>
       </Section>
 
@@ -157,28 +190,21 @@ const Home = () => (
 
         {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            href="https://www.youtube.com/shashankSharma"
+            title="Shashank Sharma"
             thumbnail={thumbYouTube}
           >
             My YouTube channel
           </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
         </SimpleGrid> */}
 
-        <Box align="center" my={4}>
+	      {/*<Box align="center" my={4}>
           <NextLink href="/posts">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Blog Posts
             </Button>
           </NextLink>
-        </Box>
+        </Box>*/}
       </Section>
     </Container>
   </Layout>

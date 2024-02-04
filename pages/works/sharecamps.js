@@ -16,12 +16,12 @@ const Work = () => (
         according to their experiences.
       </P>
       <List ml={4} my={4}>
-        <ListItem>
+      {/*<ListItem>
           <Meta>Website</Meta>
-          <Link href="https://sharecamps.herokuapp.com/">
-            @Share Camps <ExternalLinkIcon mx="2px" />
+          <Link href="#">
+            @Share Camps (Unavailable) <ExternalLinkIcon mx="2px" />
           </Link>
-        </ListItem>
+        </ListItem>*/}
         <ListItem>
           <Meta>Platform</Meta>
           <span>Windows/Linux/macOS/iOS/Android </span>

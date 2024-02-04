@@ -17,7 +17,7 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://sharebloggs.herokuapp.com/">
+          <Link href="https://react-blogg-app.vercel.app/">
             @Share Blogs <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
